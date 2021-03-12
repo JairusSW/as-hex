@@ -1,6 +1,6 @@
 {
   "name": "as-hex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HEX encode/decode in AssemblyScript",
   "types": "./assembly/index.ts",
   "scripts": {
@@ -15,17 +15,14 @@
     "encode",
     "decode"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JairusSW/as-hex"
+  },
   "author": "JairusSW",
   "license": "MIT",
-  "dependencies": {
-    "@assemblyscript/loader": "^0.18.14",
-    "as-console": "^3.0.0",
-    "assemblyscript": "^0.18.14",
-    "base-x": "^3.0.8",
-    "convert-hex": "^0.1.0",
-    "string-hex": "^1.0.0"
-  },
   "devDependencies": {
+    "@assemblyscript/loader": "^0.18.14",
     "assemblyscript": "^0.18.14"
   }
 }

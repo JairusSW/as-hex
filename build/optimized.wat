@@ -1,15 +1,14 @@
 (module
  (type $i32_i32_=>_none (func (param i32 i32)))
- (type $none_=>_none (func))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
  (type $i32_=>_i32 (func (param i32) (result i32)))
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
+ (type $none_=>_none (func))
  (type $i32_=>_none (func (param i32)))
  (type $i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32)))
  (type $none_=>_i32 (func (result i32)))
  (type $i32_=>_f64 (func (param i32) (result f64)))
  (import "env" "abort" (func $~lib/builtins/abort (param i32 i32 i32 i32)))
- (import "index" "ConsoleLog" (func $~lib/as-console/index/ConsoleLog (param i32)))
  (memory $0 1)
  (data (i32.const 1036) "<")
  (data (i32.const 1048) "\01\00\00\00(\00\00\00A\00l\00l\00o\00c\00a\00t\00i\00o\00n\00 \00t\00o\00o\00 \00l\00a\00r\00g\00e")
@@ -41,14 +40,8 @@
  (data (i32.const 1976) "\01\00\00\00\04\00\00\000\00x")
  (data (i32.const 1996) ",")
  (data (i32.const 2008) "\01\00\00\00\1c\00\00\00~\00l\00i\00b\00/\00s\00t\00r\00i\00n\00g\00.\00t\00s")
- (data (i32.const 2044) ",")
- (data (i32.const 2056) "\01\00\00\00\12\00\00\00e\00n\00c\00o\00d\00e\00d\00:\00 ")
- (data (i32.const 2092) ",")
- (data (i32.const 2104) "\01\00\00\00\1c\00\00\00H\00e\00l\00l\00o\00 \00W\00o\00r\00l\00d\00 \00<\d8\0e\df")
- (data (i32.const 2140) ",")
- (data (i32.const 2152) "\01\00\00\00\12\00\00\00d\00e\00c\00o\00d\00e\00d\00:\00 ")
- (data (i32.const 2192) "\04\00\00\00 \00\00\00\00\00\00\00 ")
- (data (i32.const 2220) "A\00\00\00\02")
+ (data (i32.const 2048) "\04\00\00\00 \00\00\00\00\00\00\00 ")
+ (data (i32.const 2076) "A\00\00\00\02")
  (global $~lib/rt/itcms/total (mut i32) (i32.const 0))
  (global $~lib/rt/itcms/threshold (mut i32) (i32.const 0))
  (global $~lib/rt/itcms/state (mut i32) (i32.const 0))
@@ -59,8 +52,7 @@
  (global $~lib/rt/itcms/white (mut i32) (i32.const 0))
  (global $~lib/rt/itcms/fromSpace (mut i32) (i32.const 0))
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
- (global $~lib/memory/__stack_pointer (mut i32) (i32.const 18612))
- (export "test" (func $assembly/index/test))
+ (global $~lib/memory/__stack_pointer (mut i32) (i32.const 18468))
  (export "memory" (memory $0))
  (export "encode" (func $export:assembly/index/encode))
  (export "decode" (func $export:assembly/index/decode))
@@ -195,7 +187,7 @@
    if
     i32.const 0
     local.get $0
-    i32.const 18612
+    i32.const 18468
     i32.lt_u
     local.get $0
     i32.load offset=8
@@ -241,7 +233,7 @@
    i32.const 1
   else
    local.get $1
-   i32.const 2192
+   i32.const 2048
    i32.load
    i32.gt_u
    if
@@ -255,7 +247,7 @@
    local.get $1
    i32.const 3
    i32.shl
-   i32.const 2196
+   i32.const 2052
    i32.add
    i32.load
    i32.const 32
@@ -860,10 +852,10 @@
   if
    unreachable
   end
-  i32.const 18624
+  i32.const 18480
   i32.const 0
   i32.store
-  i32.const 20192
+  i32.const 20048
   i32.const 0
   i32.store
   loop $for-loop|0
@@ -874,7 +866,7 @@
     local.get $1
     i32.const 2
     i32.shl
-    i32.const 18624
+    i32.const 18480
     i32.add
     i32.const 0
     i32.store offset=4
@@ -892,7 +884,7 @@
       i32.add
       i32.const 2
       i32.shl
-      i32.const 18624
+      i32.const 18480
       i32.add
       i32.const 0
       i32.store offset=96
@@ -910,13 +902,13 @@
     br $for-loop|0
    end
   end
-  i32.const 18624
-  i32.const 20196
+  i32.const 18480
+  i32.const 20052
   memory.size
   i32.const 16
   i32.shl
   call $~lib/rt/tlsf/addMemory
-  i32.const 18624
+  i32.const 18480
   global.set $~lib/rt/tlsf/ROOT
  )
  (func $~lib/rt/itcms/step (result i32)
@@ -995,7 +987,7 @@
       local.set $0
       loop $while-continue|0
        local.get $0
-       i32.const 18612
+       i32.const 18468
        i32.lt_u
        if
         local.get $0
@@ -1085,7 +1077,7 @@
       unreachable
      end
      local.get $0
-     i32.const 18612
+     i32.const 18468
      i32.lt_u
      if
       local.get $0
@@ -1108,7 +1100,7 @@
       i32.const 4
       i32.add
       local.tee $1
-      i32.const 18612
+      i32.const 18468
       i32.ge_u
       if
        global.get $~lib/rt/tlsf/ROOT
@@ -2506,7 +2498,7 @@
   memory.size
   i32.const 16
   i32.shl
-  i32.const 18612
+  i32.const 18468
   i32.sub
   i32.const 1
   i32.shr_u
@@ -2523,11 +2515,11 @@
  )
  (func $~stack_check
   global.get $~lib/memory/__stack_pointer
-  i32.const 2228
+  i32.const 2084
   i32.lt_s
   if
-   i32.const 18640
-   i32.const 18688
+   i32.const 18496
+   i32.const 18544
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3118,75 +3110,6 @@
   call $~lib/string/String.UTF8.decodeUnsafe
   global.get $~lib/memory/__stack_pointer
   i32.const 16
-  i32.add
-  global.set $~lib/memory/__stack_pointer
- )
- (func $assembly/index/test
-  (local $0 i32)
-  global.get $~lib/memory/__stack_pointer
-  i32.const 20
-  i32.sub
-  global.set $~lib/memory/__stack_pointer
-  call $~stack_check
-  global.get $~lib/memory/__stack_pointer
-  i64.const 0
-  i64.store
-  global.get $~lib/memory/__stack_pointer
-  i64.const 0
-  i64.store offset=8
-  global.get $~lib/memory/__stack_pointer
-  i32.const 0
-  i32.store offset=16
-  global.get $~lib/memory/__stack_pointer
-  i32.const 2064
-  i32.store offset=4
-  global.get $~lib/memory/__stack_pointer
-  i32.const 2112
-  i32.store offset=12
-  i32.const 2112
-  call $assembly/index/encode
-  local.set $0
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=8
-  i32.const 2064
-  local.get $0
-  call $~lib/string/String.__concat
-  local.set $0
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store
-  local.get $0
-  call $~lib/as-console/index/ConsoleLog
-  global.get $~lib/memory/__stack_pointer
-  i32.const 2160
-  i32.store offset=4
-  global.get $~lib/memory/__stack_pointer
-  i32.const 2112
-  i32.store offset=16
-  i32.const 2112
-  call $assembly/index/encode
-  local.set $0
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=12
-  local.get $0
-  call $assembly/index/decode
-  local.set $0
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=8
-  i32.const 2160
-  local.get $0
-  call $~lib/string/String.__concat
-  local.set $0
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store
-  local.get $0
-  call $~lib/as-console/index/ConsoleLog
-  global.get $~lib/memory/__stack_pointer
-  i32.const 20
   i32.add
   global.set $~lib/memory/__stack_pointer
  )
