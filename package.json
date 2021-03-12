@@ -1,0 +1,31 @@
+{
+  "name": "as-hex",
+  "version": "1.0.0",
+  "description": "HEX encode/decode in AssemblyScript",
+  "types": "./assembly/index.ts",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "keywords": [
+    "assemblyscript",
+    "hex",
+    "encode",
+    "decode"
+  ],
+  "author": "JairusSW",
+  "license": "MIT",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.18.14",
+    "as-console": "^3.0.0",
+    "assemblyscript": "^0.18.14",
+    "base-x": "^3.0.8",
+    "convert-hex": "^0.1.0",
+    "string-hex": "^1.0.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.18.14"
+  }
+}

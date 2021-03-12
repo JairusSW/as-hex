@@ -1,0 +1,72 @@
+dependencies:
+  '@assemblyscript/loader': 0.18.14
+  as-console: 3.0.0
+  assemblyscript: 0.18.14
+  base-x: 3.0.8
+  convert-hex: 0.1.0
+  string-hex: 1.0.0
+lockfileVersion: 5.2
+packages:
+  /@assemblyscript/loader/0.18.14:
+    dev: false
+    resolution:
+      integrity: sha512-UkXt+t67VC/GPmtvng1lL23Yk2B1nffwyzCao1Q/DMdVlQCbVCCb/9b9eiGff1F+VbFU8JadD5eTbGnPu8aNXA==
+  /as-bind/0.6.1:
+    dependencies:
+      '@assemblyscript/loader': 0.18.14
+      assemblyscript: 0.18.14
+    dev: false
+    resolution:
+      integrity: sha512-90s9PreIi9PQW0gFrKQr5d97f6a3rpqdrJTEgB5jdDPgl0SoEfmz8nq4oSUdmdB7Zv3wp3KPsvpJDfCygduHyQ==
+  /as-console/3.0.0:
+    dependencies:
+      '@assemblyscript/loader': 0.18.14
+      as-bind: 0.6.1
+      assemblyscript: 0.18.14
+    dev: false
+    resolution:
+      integrity: sha512-V725a37gHn6L5a+qkyvq/C8JBgOOUIn150kqoTWvLuT5qVN9R9MHh2VMujl1rmhkIut6SYoccRVojNcRbrwe4A==
+  /assemblyscript/0.18.14:
+    dependencies:
+      binaryen: 100.0.0
+      long: 4.0.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-HdWn1iUoMc3U2PT6wFA4dvU0tGrWJSNVfQwOoNjEVxhMIOVsFP6h2K/We6Cp332XctZHVRXeiEDj8ih3KJAe4g==
+  /base-x/3.0.8:
+    dependencies:
+      safe-buffer: 5.2.1
+    dev: false
+    resolution:
+      integrity: sha512-Rl/1AWP4J/zRrk54hhlxH4drNxPJXYUaKffODVI53/dAsV4t9fBxyxYKAVPU1XBHxYwOWP9h9H0hM2MVw4YfJA==
+  /binaryen/100.0.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-nxOt8d8/VXAuSVEtAWUdKrqpqCy365QqD223EzzB1GzS5himiZAfM/R5lXx+M/5q8TB8cYp3tYxv5rTjNTJveQ==
+  /convert-hex/0.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-CMBFaJIsJ3drii6BqV05M2LqC2U=
+  /long/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
+  /safe-buffer/5.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
+  /string-hex/1.0.0:
+    dev: false
+    engines:
+      node: '>= 8.9.4'
+    resolution:
+      integrity: sha512-BVj+jcFkid8p2hDu96wRks4U3Dz/OfPnNR4vmABQqVIZgeSRAXYB5/zGrYT/8QhGhcEi/fMnjtLDz0rcJ5pEIQ==
+specifiers:
+  '@assemblyscript/loader': ^0.18.14
+  as-console: ^3.0.0
+  assemblyscript: ^0.18.14
+  base-x: ^3.0.8
+  convert-hex: ^0.1.0
+  string-hex: ^1.0.0
